@@ -6,6 +6,12 @@ const icon_map = new Map([
   ["Snow", "/icons/snowy-6.svg"],
   ["snow", "/icons/snowy-6.svg"],
   ["Clear", "/icons/day.svg"],
+  ["Mist", "/icons/mist.png"],
+  ["Smoke", "/icons/smoke.png"],
+  ["Haze", "/icons/haze.png"],
+  ["Fog", "/icons/fog.png"],
+  ["Squall", "/icons/squall.png"],
+  ["Tornado", "/icons/tornado.png"],
 ]);
 
 const getIcon = (key) => {
