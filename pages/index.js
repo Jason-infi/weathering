@@ -14,7 +14,7 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const debouncedSearchQuery = useDebounce(searchQuery, 300);
   const { data, isError, mutate } = useFetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${debouncedSearchQuery}&appid=c0a4f98360a7b30555ea0f1d58b9a30e&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${debouncedSearchQuery}&appid=${process.env.NEXT_PUBLIC_API_KEY}&units=metric`
   );
   return (
     <div className={`grid place-items-center h-full w-full ${styles.mainBg}`}>
