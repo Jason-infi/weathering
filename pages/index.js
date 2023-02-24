@@ -18,7 +18,7 @@ export default function Home() {
   );
   return (
     <div className={`grid place-items-center h-full w-full ${styles.mainBg}`}>
-      <div className=' h-4/5 w-4/5 max-w-sm rounded-lg bg-white flex flex-col items-center border-pink-300 border-2 lg:border-4'>
+      <div className=' h-4/5 w-4/5 max-w-sm rounded-lg bg-white flex flex-col items-center border-pink-300 border-2 lg:border-4 overflow-scroll  scrollbar-hide'>
         <div className='w-full flex items-center justify-self-auto'>
           <div className='justify-between text-cyan-400 p-3 items-center space-x-2 '>
             <input
